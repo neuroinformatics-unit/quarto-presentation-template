@@ -35,7 +35,7 @@ jobs:
 
       - name: Render Quarto Project
         run: |
-          quarto render --to revealjs presentation.qmd
+          quarto render presentation.qmd --to revealjs
 
       - name: Rename files
         run: |
