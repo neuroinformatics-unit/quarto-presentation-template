@@ -34,10 +34,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: revealjs
-          path: presentation.qmd
+        run: |
+          quarto render --to revealjs presentation.qmd
 
       - name: Rename files
         run: |
