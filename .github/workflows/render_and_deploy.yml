@@ -39,6 +39,10 @@ jobs:
           to: revealjs
           path: presentation.qmd
 
+      - name: Rename files
+        run: |
+          mv presentation.html index.html
+
       - name: Deploy 
         uses: JamesIves/github-pages-deploy-action@v4
         with:
