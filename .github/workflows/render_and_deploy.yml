@@ -17,7 +17,9 @@ on:
 
 jobs:
   build:
-    name: Render Quarto presentation
+    name: build and render
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -37,15 +39,8 @@ jobs:
           to: revealjs
           path: ./presentation.qmd
 
-  deploy:
-    name: Deploy to GitHub Pages
-    needs: build
-    permissions:
-      contents: write
-    if: github.event_name == 'push' && github.ref_type == 'tag'
-    runs-on: ubuntu-latest
-    steps:
       - name: Publish to GitHub Pages (and render)
+        if: github.event_name == 'push' && github.ref_type == 'tag'
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
