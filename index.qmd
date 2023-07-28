@@ -88,12 +88,15 @@ print("Hello world")
 
 {{< include slides/extra_slide.qmd >}}
 
-## What is BrainGlobe?
+## An example image
 
 Include an image:
+
 ![](img/bg_logo_wide.png){width=900 fig-align=center}
 
-And a preview hyperlink:
+
+## Link and a preview a webpage:
+
 ::: {style="text-align: center; margin-top: 1em"}
 [interoperable Python-based tools for computational neuroanatomy](https://brainglobe.info/index.html){preview-link="true" style="text-align: center"}
 :::
