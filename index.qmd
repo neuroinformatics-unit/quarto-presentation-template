@@ -77,7 +77,7 @@ from pathlib import Path
 print("Hello world")
 ```
 
-## You can execute cold without showing that you have by using #|echo: false
+## You can execute code without showing that you have by using #|echo: false
 ```{python}
 #| echo: false
 
