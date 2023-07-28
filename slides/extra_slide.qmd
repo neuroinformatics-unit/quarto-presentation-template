@@ -1,0 +1,3 @@
+## A slide imported from outside the qmd
+
+This will become an example about how to use a common slide deck for the group.
