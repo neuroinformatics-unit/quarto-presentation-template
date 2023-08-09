@@ -45,7 +45,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: .
-          clean-exclude: |
-            *_files/*
-            index.html
+          clean: false
   
