@@ -49,6 +49,7 @@ Some example slides - [also look at example RevealJS slides in the Quarto docs](
 * bullet points with highlighting 
 * two-column slides 
 * how to include a slide from a separate MD file
+* preview and link to a webpage
 
 ## Just a code block, nothing gets executed...
 
@@ -86,3 +87,16 @@ print("Hello world")
 ```
 
 {{< include slides/extra_slide.qmd >}}
+
+## An example image
+
+Include an image:
+
+![](img/bg_logo_wide.png){width=900 fig-align=center}
+
+
+## Link and a preview a webpage:
+
+::: {style="text-align: center; margin-top: 1em"}
+[interoperable Python-based tools for computational neuroanatomy](https://brainglobe.info/index.html){preview-link="true" style="text-align: center"}
+:::
