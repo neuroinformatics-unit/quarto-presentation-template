@@ -37,8 +37,9 @@ jobs:
         run: |
           quarto render index.qmd --to revealjs
 
-      - name: Debug with tmate on failure
-        uses: mxschmitt/action-tmate@v3
+      - name: Debug with ls
+        run: |
+          ls -alR
 
       - name: Deploy 
         uses: JamesIves/github-pages-deploy-action@v4
