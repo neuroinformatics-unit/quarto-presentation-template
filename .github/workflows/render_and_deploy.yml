@@ -42,6 +42,7 @@ jobs:
           mkdir build
           mv index.html build/
           mv index_files build/
+          touch build/.nojekyll
 
       - name: Deploy 
         uses: JamesIves/github-pages-deploy-action@v4
