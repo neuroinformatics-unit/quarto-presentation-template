@@ -39,7 +39,7 @@ jobs:
 
       - name: Debug with ls
         run: |
-          ls -alR
+          ls -al
 
       - name: Deploy 
         uses: JamesIves/github-pages-deploy-action@v4
