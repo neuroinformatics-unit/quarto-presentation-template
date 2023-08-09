@@ -37,13 +37,14 @@ jobs:
         run: |
           quarto render index.qmd --to revealjs
 
-      - name: Debug with ls
+      - name: Move outputs to build folder
         run: |
-          ls -al
+          mkdir build
+          mv index.html build/
+          mv index_files build/
 
       - name: Deploy 
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: .
-          clean-exclude: index_files/*
+          folder: build
   
