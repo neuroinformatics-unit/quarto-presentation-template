@@ -6,6 +6,8 @@ To use this template
 * Create a conda environment with `conda create -n quarto python=3.11`
 * Activate the environment with `conda activate quarto`
 * `pip install -r requirements.txt`
+* If you have additional requirements for you execution environment (e.g. your Python package) add them to `requirements.txt`
+* Edit the `index.qmd` file to your liking, using the example slides as a guide.
 
 To build the presentation locally, you can eiter:
 * Use the VS Code extension's GUI ("Render" button)
