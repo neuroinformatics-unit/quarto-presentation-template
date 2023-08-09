@@ -35,11 +35,7 @@ jobs:
 
       - name: Render Quarto Project
         run: |
-          quarto render presentation.qmd --to revealjs
-
-      - name: Rename files
-        run: |
-          mv presentation.html index.html
+          quarto render index.qmd --to revealjs
 
       - name: Deploy 
         uses: JamesIves/github-pages-deploy-action@v4
