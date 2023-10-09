@@ -39,6 +39,8 @@ format:
           margin-left: 0
         embed-resources: true
         page-layout: full
+my-custom-stuff:
+   my-reuseable-variable: "I can use this wherever I want in the markdown, and change it in only once place :)"
 ---
 
 ## Contents
@@ -100,3 +102,10 @@ Include an image:
 ::: {style="text-align: center; margin-top: 1em"}
 [interoperable Python-based tools for computational neuroanatomy](https://brainglobe.info/index.html){preview-link="true" style="text-align: center"}
 :::
+
+## Use a variable several times
+
+Variables defined in the metadata is re-useable anywhere
+
+* {{< meta my-custom-stuff.my-reuseable-variable >}}
+* {{< meta my-custom-stuff.my-reuseable-variable >}}
