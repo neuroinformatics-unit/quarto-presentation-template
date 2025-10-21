@@ -1,57 +1,27 @@
 ---
 title: A template presentation
-subtitle: so much fun
-author: SWC Neuroinformatics Unit
-execute: 
-  enabled: true
+subtitle: Made with Quarto and RevealJS
+author: SWC/GCNU Neuroinformatics Unit
+date: today
 format:
-    revealjs:
-        theme: [default, niu-dark.scss]
-        logo: img/logo_niu_dark.png
-        footer: "Edit this footer | 2023-07-26"
-        slide-number: c
-        menu:
-            numbers: true
-        chalkboard: true
-        scrollable: true
-        preview-links: false
-        view-distance: 10
-        mobile-view-distance: 10
-        auto-animate: true
-        auto-play-media: true
-        code-overflow: wrap
-        highlight-style: atom-one
-        mermaid: 
-          theme: neutral
-          fontFamily: arial
-          curve: linear
-    html:
-        theme: [default, niu-dark.scss]
-        logo: img/logo_niu_dark.png
-        date: "2023-07-05"
-        toc: true
-        code-overflow: scroll
-        highlight-style: atom-one
-        mermaid: 
-          theme: neutral
-          fontFamily: arial
-          curve: linear
-          margin-left: 0
-        embed-resources: true
-        page-layout: full
+  revealjs:
+    footer: "Location | Event | Date"
 my-custom-stuff:
    my-reuseable-variable: "I can use this wherever I want in the markdown, and change it in only once place :)"
 ---
 
 ## Contents
 
-Some example slides - [also look at example RevealJS slides in the Quarto docs](https://quarto.org/docs/presentations/revealjs/)
+We can use all the normal markdown features here, like:
 
-* Non-executable and executable code-blocks
-* bullet points with highlighting 
-* two-column slides 
-* how to include a slide from a separate MD file
-* preview and link to a webpage
+- Bullet lists
+- **Bold text**
+- *Italic text*
+- `Inline code`
+
+::: aside
+[See also example RevealJS slides in the Quarto docs.](https://quarto.org/docs/presentations/revealjs/)
+:::
 
 ## Just a code block, nothing gets executed...
 
@@ -109,3 +79,41 @@ Variables defined in the metadata is re-useable anywhere
 
 * {{< meta my-custom-stuff.my-reuseable-variable >}}
 * {{< meta my-custom-stuff.my-reuseable-variable >}}
+
+## Admonitions / Callouts
+
+:::{.callout-note}
+## Note Callout
+
+This is a note callout.
+:::
+
+:::{.callout-tip}
+## Tip Callout
+
+This is a tip callout.
+:::
+
+:::{.callout-warning}
+## Warning Callout
+
+This is a warning callout.
+:::
+
+## Citing references
+
+- To cite references, include them in the `references.bib` BibTeX file
+and then use the syntax `[@citekey]` to cite them.
+- For example, our preprint of the Blackcap brain atlas [@blackcap_preprint].
+- You can preview the reference entry by hovering over the citation, cool!
+
+::: aside
+[Read more about Quarto citations](https://quarto.org/docs/authoring/citations.html#sec-citations).
+:::
+
+## References {.smaller}
+
+This is how you create a references section, i.e. a bibliography.
+
+::: {#refs}
+:::
