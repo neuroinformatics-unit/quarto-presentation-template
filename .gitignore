@@ -3,5 +3,5 @@ extra_slide.html
 index_files/
 build/
 .DS_Store
-
 /.quarto/
+.venv/
