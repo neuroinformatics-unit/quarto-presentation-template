@@ -1,0 +1,35 @@
+project:
+  type: default
+
+bibliography: references.bib
+
+execute:
+  enabled: true
+
+format:
+  revealjs:
+    slide-number: c
+    menu:
+      numbers: true
+    chalkboard: true
+    scrollable: true
+    preview-links: false
+    view-distance: 10
+    mobile-view-distance: 10
+    auto-animate: true
+    auto-animate-easing: ease-in
+    auto-animate-duration: 0.5
+    auto-play-media: true
+    code-overflow: wrap
+    highlight-style: atom-one
+    from: markdown+emoji   # enable emoji support
+    mermaid:
+      theme: neutral
+      fontFamily: arial
+      curve: linear
+    title-slide-attributes:
+      data-background-color: "#000000"
+      data-background-image: "img/swc-building.jpg"
+      data-background-size: "cover"
+      data-background-position: "center"
+      data-background-opacity: "0.6"

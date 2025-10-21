@@ -1,0 +1,44 @@
+meta:
+  name:
+    short: NIU
+    full: Neuroinformatics Unit
+  link:
+    home: https://neuroinformatics.dev
+    github: https://github.com/neuroinformatics-unit
+    zulip: https://neuroinformatics.zulipchat.com
+
+logo:
+  medium: "img/logo_niu_light.png"
+
+color:
+  palette:
+    white: "#FFFFFF"
+    dark-grey: "#1E1E1E"
+    niu-green: "#03A062"
+    niu-green-dark: "#04B46D"
+    bg-orange: "#EE9040"
+    blue: "#4178f3"
+  # Flip the background/foregroud colors for dark mode
+  background: white
+  foreground: dark-grey
+  primary: niu-green
+  info: blue
+  success: niu-green
+  warning: bg-orange
+
+
+typography:
+  fonts:
+    - family: Barlow
+      source: google
+    - family: JetBrains Mono
+      source: google
+  base:
+    family: Barlow
+  headings:
+    family: Barlow
+    weight: 600
+  link:
+    color: primary
+  monospace:
+    family: JetBrains Mono
